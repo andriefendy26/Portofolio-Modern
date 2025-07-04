@@ -4,7 +4,7 @@ import Hero from "./Layout/Hero";
 import Home from "./Pages/Home";
 import Galery from "./Pages/Galery";
 import ProjectPage from "./Pages/Project";
-import AboutUs from "./Pages/AboutMe";
+// import AboutUs from "./Pages/AboutMe";
 import ContactSection from "./Layout/Contact";
 
 function App() {

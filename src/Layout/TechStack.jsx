@@ -79,53 +79,15 @@ export default function TechStack() {
                       <span>{tech.name}</span>
                     </div>
 
-                    {/* Hover indicator */}
+                    {/* Hover indicator
                     <div className="absolute -top-2 -right-2 w-4 h-4 bg-gray-900 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-0 group-hover:scale-100">
                       <div className="absolute inset-0 bg-gray-900 rounded-full animate-ping"></div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Floating Categories */}
-            {/* <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-200 hover:border-gray-300 transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FaCode className="text-white text-2xl" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  Frontend
-                </h3>
-                <p className="text-sm text-gray-600">
-                  React, TypeScript, Tailwind CSS
-                </p>
-              </div>
-
-              <div className="text-center p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-200 hover:border-gray-300 transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FaServer className="text-white text-2xl" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  Backend
-                </h3>
-                <p className="text-sm text-gray-600">
-                  Node.js, Laravel, Express.js
-                </p>
-              </div>
-
-              <div className="text-center p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-200 hover:border-gray-300 transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FaDatabase className="text-white text-2xl" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  Database
-                </h3>
-                <p className="text-sm text-gray-600">
-                 MySQL
-                </p>
-              </div>
-            </div> */}
           </div>
         </div>
 

@@ -54,6 +54,17 @@ export default function ProjectPage() {
 
   const projectData = [
     {
+      img: ["Porto/codevlabs/thumbnail.png"],
+      title: "Website CodevLabs",
+      subjudul:
+        "Website ini dibuat untuk Menawarkan layanan profesional di bidang pengembangan teknologi digital,  Menampilkan portofolio proyek digital yang pernah di kerjakan. dan Menjadi media untuk klien melakukan konsultasi dan pemesanan jasa.",
+      github: "/",
+      production: "https://codev-labs-s4xd.vercel.app/",
+      techStack: ["React vite", "TailwindCSS"],
+      category: "Web Development",
+      date: "2024",
+    },
+    {
       img: [
         "Porto/c2ukaltara/thumbnail.png",
         "Porto/c2ukaltara/image.png",
@@ -66,7 +77,7 @@ export default function ProjectPage() {
         "Proyek ini merupakan website komprehensif untuk C2UKALTARA yang menggabungkan teknologi modern dengan kebutuhan bisnis yang kompleks. Website ini dirancang dengan arsitektur yang scalable dan user-friendly interface untuk mendukung berbagai aktivitas operasional organisasi.",
       github: "/",
       production: "https://c2ukaltara.id/",
-      techStack: ["React vite", "Express Js", "Tailwind CSS","FaceApi.js"],
+      techStack: ["React vite", "Express Js", "Tailwind CSS", "FaceApi.js"],
       category: "Web Development",
       date: "2024",
     },
@@ -103,93 +114,65 @@ export default function ProjectPage() {
     },
     {
       img: [
-        "https://via.placeholder.com/400x300/3b82f6/ffffff?text=E-Commerce",
-        "https://via.placeholder.com/400x300/3b82f6/ffffff?text=Dashboard",
-        "https://via.placeholder.com/400x300/3b82f6/ffffff?text=Product",
+        "Porto/kasirpyt/thumbnail.png",
+        "Porto/kasirpyt/iamge1.png",
+        "Porto/kasirpyt/iamge2.png",
+        "Porto/kasirpyt/iamge3.png",
+        "Porto/kasirpyt/iamge4.png",
       ],
-      title: "E-Commerce Platform",
+      title: "Aplikasi Kasir Desktop",
       subjudul:
-        "Platform e-commerce lengkap dengan sistem pembayaran terintegrasi, manajemen inventory, dan dashboard admin yang komprehensif. Mendukung multi-vendor dengan fitur review dan rating produk.",
+        "Aplikasi kasir desktop yang dikembangkan dengan Python dan PyQt5, menyediakan interface yang user-friendly untuk operasi kasir sehari-hari. Aplikasi ini dilengkapi dengan fitur CRUD lengkap untuk manajemen produk dan transaksi.",
       github: "/",
       production: "#",
-      techStack: ["Next.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+      techStack: ["Python", "Pyqt", "MySQL"],
+      category: "Desktop Development",
+      date: "2023",
+    },
+    {
+      img: [
+        "Porto/shoopepedia/thumbnail.png",
+        "Porto/shoopepedia/iamge1.png",
+        "Porto/shoopepedia/iamge2.png",
+        "Porto/shoopepedia/iamge3.png",
+        // "Porto/kasirpyt/iamge4.png",
+      ],
+      title: "Website E-Commerce",
+      subjudul:
+        "Website dibangun menggunakan React js dan tailwindCss, menggunakan api publik sebagai data barangnya.",
+      github: "/",
+      production: "#",
+      techStack: ["React", "tailwindCss", "FakeApiStore"],
       category: "Web Development",
-      date: "2024",
-    },
-    {
-      img: [
-        "https://via.placeholder.com/400x300/10b981/ffffff?text=Learning+App",
-        "https://via.placeholder.com/400x300/10b981/ffffff?text=Course",
-        "https://via.placeholder.com/400x300/10b981/ffffff?text=Quiz",
-      ],
-      title: "Learning Management System",
-      subjudul:
-        "Aplikasi pembelajaran online dengan fitur video streaming, quiz interaktif, dan tracking progress siswa. Dilengkapi dengan sistem sertifikat digital dan forum diskusi.",
-      github: "/",
-      production: "#",
-      techStack: ["Vue.js", "Node.js", "MongoDB", "Socket.io"],
-      category: "Web Development",
       date: "2023",
     },
     {
-      img: [
-        "https://via.placeholder.com/400x300/f59e0b/ffffff?text=Task+Manager",
-        "https://via.placeholder.com/400x300/f59e0b/ffffff?text=Calendar",
-        "https://via.placeholder.com/400x300/f59e0b/ffffff?text=Team",
-      ],
-      title: "Task Management Mobile App",
+      img: ["Porto/perpustakaan/thumbnail.png"],
+      title: "Aplikasi Website Perpustakaan",
       subjudul:
-        "Aplikasi mobile untuk manajemen tugas tim dengan fitur real-time collaboration, calendar integration, dan notification push. Mendukung offline mode dan sinkronisasi data.",
+        "Aplikasi ini di bangun untuk memanagemen database kepegawaian serta konten website",
       github: "/",
       production: "#",
-      techStack: ["React Native", "Firebase", "Redux"],
-      category: "Mobile Development",
-      date: "2023",
-    },
-    {
-      img: [
-        "https://via.placeholder.com/400x300/ef4444/ffffff?text=Analytics",
-        "https://via.placeholder.com/400x300/ef4444/ffffff?text=Dashboard",
-        "https://via.placeholder.com/400x300/ef4444/ffffff?text=Reports",
-      ],
-      title: "Business Analytics Dashboard",
-      subjudul:
-        "Dashboard analitik bisnis dengan visualisasi data real-time, laporan otomatis, dan insights prediktif. Terintegrasi dengan berbagai sumber data dan API eksternal.",
-      github: "/",
-      production: "#",
-      techStack: ["React", "D3.js", "Python", "FastAPI"],
-      category: "Data Science",
-      date: "2023",
-    },
-    {
-      img: [
-        "https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Booking+System",
-        "https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Calendar",
-        "https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Payment",
-      ],
-      title: "Hotel Booking System",
-      subjudul:
-        "Sistem reservasi hotel dengan fitur pencarian advanced, manajemen kamar, sistem pembayaran, dan integrasi dengan channel manager. Mendukung multi-bahasa dan mata uang.",
-      github: "/",
-      production: "#",
-      techStack: ["Laravel", "Vue.js", "MySQL", "PayPal API"],
+      techStack: ["Next Js", "FIreBase", "TailwindCss"],
       category: "Web Development",
       date: "2023",
     },
     {
       img: [
-        "https://via.placeholder.com/400x300/06b6d4/ffffff?text=Inventory+App",
-        "https://via.placeholder.com/400x300/06b6d4/ffffff?text=Barcode",
-        "https://via.placeholder.com/400x300/06b6d4/ffffff?text=Stock",
+        "Porto/penyiraman/image.png",
+        "Porto/kasirpyt/iamge1.png",
+        "Porto/kasirpyt/iamge2.png",
+        "Porto/kasirpyt/iamge3.png",
+        "Porto/kasirpyt/iamge4.png",
       ],
-      title: "Inventory Management App",
+      title: "Penyiaraman otomatis dan Interface Website",
       subjudul:
-        "Aplikasi manajemen inventory dengan fitur barcode scanning, tracking stock real-time, alert sistem, dan laporan inventory. Mendukung multiple warehouse dan supplier management.",
+        "Sistem penyiraman tanaman dengan website sebagai interface dan sudah menggunakan logika fuzzy untuk penentuan kelembapan tanah",
       github: "/",
       production: "#",
-      techStack: ["Flutter", "Django", "PostgreSQL"],
-      category: "Mobile Development",
-      date: "2022",
+      techStack: ["Arduino", "socket.io", "socket.io"],
+      category: "Mikrocontrolle & rWeb Development",
+      date: "2023",
     },
   ];
 

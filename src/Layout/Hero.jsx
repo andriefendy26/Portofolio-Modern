@@ -1,7 +1,5 @@
 import React, { Children, useRef, useState } from "react";
-import Lanyard from "../Component/Lanyard/Lanyard";
 import BlurText from "../Component/BlurText/Blurtext";
-import GradientText from "../Component/GradientText/GradienText";
 import Image from "../assets/MeToo.png";
 import { motion } from "motion/react";
 import "./css/Hero.css";
@@ -103,7 +101,7 @@ export default function Hero() {
 
   return (
     <div
-      className=""
+      className=" pt-14 md:pt-0 lg:pt-14"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -115,19 +113,20 @@ export default function Hero() {
           transform: `translate(${positionCursor.x}px, ${positionCursor.y}px)`,
         }}
       ></div>
-      <div className="flex flex-col pt-14 h-screen justify-center items-center gap-1 cursor-pointer">
-        <p className="roboto-mono text-xl mb-6">
+
+      <div className="flex flex-col h-screen justify-center items-center gap-1 cursor-pointer">
+        <p className="roboto-mono text-center text-lg lg:text-xl lg:mb-6 lg:p-0 p-4">
           Hello 👋, Nama saya Andri Efendy dan seorang freelancer
         </p>
         <div
-          className="flex flex-col items-center"
+          className="flex flex-col items-center   "
           onMouseMove={handleMouseMoveCursor}
           onMouseLeave={handleMouseLeaveCursor}
         >
           <div
             ref={TextUp}
             onMouseEnter={() => handleMouseEnterText("atas")}
-            className="text-overlay-wrapper edu-vic-wa-nt-hand"
+            className="text-overlay-wrapper edu-vic-wa-nt-hand text-7xl md:text-[8rem] lg:text-[11rem] font-[900] "
           >
             <BlurText
               text="FullStack"
@@ -135,7 +134,7 @@ export default function Hero() {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="transition-all duration-500 ease-in-out text-solid text-9xl"
+              className="transition-all duration-500 ease-in-out text-solid"
             />
             <BlurText
               text="FullStack"
@@ -143,13 +142,13 @@ export default function Hero() {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="transition-all duration-500 ease-in-out text-stroke text-9xl "
+              className="transition-all duration-500 ease-in-out text-stroke"
             />
           </div>
           <div
             ref={TextDown}
             onMouseEnter={() => handleMouseEnterText("bawah")}
-            className="text-overlay-wrapper oswald"
+            className="text-overlay-wrapper oswald  text-7xl md:text-[8rem] lg:text-[11rem] font-[900] tracking-[15px] lg:tracking-[30px]"
           >
             <BlurText
               text="Developer"
@@ -157,7 +156,7 @@ export default function Hero() {
               animateBy="words"
               direction="bottom"
               onAnimationComplete={handleAnimationComplete}
-              className="text-stroke-no-hover transition-all duration-500 ease-in-out tracking-[30px]"
+              className="text-stroke-no-hover transition-all duration-500 ease-in-out"
             ></BlurText>
             <BlurText
               text="Developer"
@@ -165,10 +164,10 @@ export default function Hero() {
               animateBy="words"
               direction="bottom"
               onAnimationComplete={handleAnimationComplete}
-              className="hidden transition-all duration-500 ease-in-out tracking-[30px]"
+              className="hidden transition-all duration-500 ease-in-out "
             ></BlurText>
           </div>
-          <div className="flex justify-between w-full text-2xl italic">
+          <div className="flex justify-between w-full md:text-xl lg:text-2xl italic my-2 md:my-0">
             <AnimatedContent
               distance={150}
               direction="horizontal"
@@ -193,15 +192,7 @@ export default function Hero() {
             </AnimatedContent>
           </div>
         </div>
-        <img
-          className="absolute w-[500px] bottom-0 z-[30] grayscale pointer-events-none mask-b-from-70% mask-b-to-95%"
-          src={Image}
-          alt="Andri"
-          style={{
-            transform: `translate(${position.x}px, ${position.y}px)`,
-          }}
-        ></img>
-        <div className="flex gap-2 mt-10">
+        <div className="relative z-[200] flex gap-2 md:mt-10">
           <AnimatedContent
             distance={150}
             direction="vertical"
@@ -212,13 +203,7 @@ export default function Hero() {
             animateOpacity
           >
             <Link to="/">
-              <div
-                className="box p-2 px-5 tran sition-all duration-300 hover:shadow-2xl bg-black text-white border-2 cursor-pointer rounded-lg tracking-tight hover:px-10"
-                // animate={{ x: 0 }}
-                // whileInView={{ opacity: 1 }}
-                // style={{ x: -100 }}
-                // layout
-              >
+              <div className=" p-2 px-5 border-black transition-all duration-300 hover:shadow-2xl bg-black text-white border-2 cursor-pointer rounded-lg tracking-tight hover:px-10">
                 You need a website
               </div>
             </Link>
@@ -239,8 +224,15 @@ export default function Hero() {
             </Link>
           </AnimatedContent>
         </div>
+        <img
+          className="relative md:absolute w-[300px] md:w-[400px] lg:w-[450px] bottom-0 z-[30] grayscale pointer-events-none mask-b-from-70% mask-b-to-95%"
+          src={Image}
+          alt="Andri"
+          style={{
+            transform: `translate(${position.x}px, ${position.y}px)`,
+          }}
+        ></img>
       </div>
-      {/* <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} /> */}
     </div>
   );
 }
