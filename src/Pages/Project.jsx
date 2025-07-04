@@ -91,7 +91,7 @@ export default function ProjectPage() {
       subjudul:
         "Aplikasi kasir yang dirancang khusus untuk UMKM dengan fitur cross-platform yang memungkinkan penggunaan baik di Android maupun web browser. Sistem ini membantu pemilik usaha kecil menengah dalam mengelola transaksi dan inventory dengan mudah.",
       github: "/",
-      production: "dsdsd",
+      production: "/",
       techStack: ["React", "React Native", "Laravel"],
       category: "Mobile Development",
       date: "2024",
@@ -141,7 +141,7 @@ export default function ProjectPage() {
       subjudul:
         "Website dibangun menggunakan React js dan tailwindCss, menggunakan api publik sebagai data barangnya.",
       github: "/",
-      production: "#",
+      production: "/",
       techStack: ["React", "tailwindCss", "FakeApiStore"],
       category: "Web Development",
       date: "2023",
@@ -152,7 +152,7 @@ export default function ProjectPage() {
       subjudul:
         "Aplikasi ini di bangun untuk memanagemen database kepegawaian serta konten website",
       github: "/",
-      production: "#",
+      production: "/",
       techStack: ["Next Js", "FIreBase", "TailwindCss"],
       category: "Web Development",
       date: "2023",
@@ -169,7 +169,7 @@ export default function ProjectPage() {
       subjudul:
         "Sistem penyiraman tanaman dengan website sebagai interface dan sudah menggunakan logika fuzzy untuk penentuan kelembapan tanah",
       github: "/",
-      production: "#",
+      production: "/",
       techStack: ["Arduino", "socket.io"],
       category: "Mikrocontrolle & rWeb Development",
       date: "2023",

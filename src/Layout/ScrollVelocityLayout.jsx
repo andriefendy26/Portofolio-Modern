@@ -5,7 +5,7 @@ export default function ScrollVelocityLayout() {
   return (
     <div className='my-10'>
        <ScrollVelocity
-        texts={["Website Developer", "Mobile App Developer"]}
+        texts={["Frontend Developer", "Frontend Developer"]}
         velocity={100}
         className="custom-scroll-text"
       />

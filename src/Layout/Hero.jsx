@@ -129,7 +129,7 @@ export default function Hero() {
             className="text-overlay-wrapper edu-vic-wa-nt-hand text-7xl md:text-[8rem] lg:text-[11rem] font-[900] "
           >
             <BlurText
-              text="FullStack"
+              text="Frontend"
               delay={200}
               animateBy="words"
               direction="top"
@@ -137,7 +137,7 @@ export default function Hero() {
               className="transition-all duration-500 ease-in-out text-solid"
             />
             <BlurText
-              text="FullStack"
+              text="Frontend"
               delay={200}
               animateBy="words"
               direction="top"
@@ -202,11 +202,11 @@ export default function Hero() {
             initialOpacity={1}
             animateOpacity
           >
-            <Link to="/">
+            <a href="https://wa.me/6282255187877?text=Halo%2C%20saya%20ingin%20membuat%20aplikasi%20web." target="_blank" rel="noopener noreferrer">
               <div className=" p-2 px-5 border-black transition-all duration-300 hover:shadow-2xl bg-black text-white border-2 cursor-pointer rounded-lg tracking-tight hover:px-10">
                 You need a website
               </div>
-            </Link>
+            </a>
           </AnimatedContent>
           <AnimatedContent
             distance={150}
@@ -217,11 +217,11 @@ export default function Hero() {
             initialOpacity={1}
             animateOpacity
           >
-            <Link to="/project">
+            <a href="https://wa.me/6282255187877?text=Halo%2C%20saya%20ingin%20membuat%20aplikasi%20Android." target="_blank" rel="noopener noreferrer">
               <div className="p-2 px-5 transition-all duration-300 hover:shadow-2xl bg-white border-black border-2 rounded-lg hover:px-10">
                 You need a Mobile Apps
               </div>
-            </Link>
+            </a>
           </AnimatedContent>
         </div>
         <img

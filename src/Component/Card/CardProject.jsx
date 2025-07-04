@@ -35,13 +35,13 @@ export default function CardProject({
       <div className="border-t-1 border-t-gray-300 p-2 py-5 grid grid-cols-2 gap-2 saira-semi-condensed-regular mt-auto">
         <a
           className="p-2 hover:bg-gray-800 hover:text-white duration-300 hover:scale-105 border-1 border-gray-700 rounded text-center"
-          href={production}
+          href={production == "" ? "" : production}
         >
           View Project
         </a>
         <a
           className="flex hover:border-gray-600 hover:border-2 hover:text-gray-700 hover:bg-transparent hover:scale-105 duration-300 items-center justify-center gap-2 bg-gray-700 text-center rounded-lg text-white p-2"
-          href={github}
+          href={github == "" || github == "/" ? "https://github.com/andriefendy26" : github}
         >
           <FaGithub />
           Code
