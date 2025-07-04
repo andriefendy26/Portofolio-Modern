@@ -170,7 +170,7 @@ export default function ProjectPage() {
         "Sistem penyiraman tanaman dengan website sebagai interface dan sudah menggunakan logika fuzzy untuk penentuan kelembapan tanah",
       github: "/",
       production: "#",
-      techStack: ["Arduino", "socket.io", "socket.io"],
+      techStack: ["Arduino", "socket.io"],
       category: "Mikrocontrolle & rWeb Development",
       date: "2023",
     },

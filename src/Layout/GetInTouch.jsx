@@ -87,7 +87,6 @@ export default function GetInTouch() {
                     </span>
                     <span>{items.name}</span>
                   </div>
-
                   {/* Hover indicator */}
                   <div className="absolute -top-2 -right-2 w-4 h-4 bg-gray-900 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-0 group-hover:scale-100">
                     <div className="absolute inset-0 bg-gray-900 rounded-full animate-ping"></div>
