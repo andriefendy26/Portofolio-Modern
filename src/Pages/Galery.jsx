@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Masonry from "../Component/MasonryGrid/Masonry";
 import AnimatedContent from "../Component/AnimateContent/AnimateContent";
 // import gambar1 from "../assets/Galery/1.jpg"
@@ -203,12 +203,12 @@ export default function Galery() {
       url: "/",
       height: 350,
     },
-    {
-      id: "34",
-      img: "./Galery/34.jpg",
-      url: "/",
-      height: 350,
-    },
+    // {
+    //   id: "34",
+    //   img: "./Galery/34.jpg",
+    //   url: "/",
+    //   height: 350,
+    // },
     {
       id: "35",
       img: "./Galery/35.jpg",
@@ -221,7 +221,33 @@ export default function Galery() {
       url: "/",
       height: 650,
     },
+    {
+      id: "37",
+      img: "./Galery/11.jpg",
+      url: "/",
+      height: 650,
+    },
+    // {
+    //   id: "38",
+    //   img: "./Galery/37.jpg",
+    //   url: "/",
+    //   height: 650,
+    // },
+    {
+      id: "39",
+      img: "./Galery/38.jpg",
+      url: "/",
+      height: 500,
+    },
+    {
+      id: "40",
+      img: "./Galery/39.jpg",
+      url: "/",
+      height: 400,
+    },
   ];
+
+  const [selectedImage, setSelected] = useState();
 
   const header = {
     title: "Visual Highlights from Behind the Camera",
@@ -230,46 +256,58 @@ export default function Galery() {
   };
 
   return (
-    <div className="container items-center flex flex-col lg:px-30 p-10">
-      <div className=" mt-20 mb-10">
-        <AnimatedContent
-          distance={150}
-          direction="horizontal"
-          reverse={true}
-          duration={1.2}
-          ease="ease.in"
-          initialOpacity={0}
-          animateOpacity
+    <>
+       {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={() => setSelected(null)}
         >
-          <h1 className="edu-vic-wa-nt-hand  text-4xl tracking-wider font-semibold">
-            {header.title}
-          </h1>
-        </AnimatedContent>
-        <AnimatedContent
-          distance={150}
-          direction="horizontal"
-          reverse={true}
-          duration={2}
-          ease="ease.in"
-          initialOpacity={0}
-          animateOpacity
-        >
-          <h2 className="saira-semi-condensed-regular tracking-wider font-semibold mt-3">
-            {header.deskripsi}
-          </h2>
-        </AnimatedContent>
+          <img src={selectedImage} alt="preview" className="max-w-sm md:max-w-2xl max-h-xl rounded-lg" />
+        </div>
+      )}
+      <div className="container items-center flex flex-col lg:px-30 p-10">
+        <div className=" mt-20 mb-10" onClick={() => setSelected("")}>
+          <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={true}
+            duration={1.2}
+            ease="ease.in"
+            initialOpacity={0}
+            animateOpacity
+          >
+            <h1 className="edu-vic-wa-nt-hand  text-4xl tracking-wider font-semibold">
+              {header.title}
+            </h1>
+          </AnimatedContent>
+          <AnimatedContent
+            distance={150}
+            direction="horizontal"
+            reverse={true}
+            duration={2}
+            ease="ease.in"
+            initialOpacity={0}
+            animateOpacity
+          >
+            <h2 className="saira-semi-condensed-regular tracking-wider font-semibold mt-3">
+              {header.deskripsi}
+            </h2>
+          </AnimatedContent>
+        </div>
+        <Masonry
+          items={items}
+          ease="power3.out"
+          duration={2.1}
+          stagger={0.05}
+          animateFrom="bottom"
+          scaleOnHover={true}
+          hoverScale={0.95}
+          blurToFocus={true}
+          colorShiftOnHover={false}
+          // onClick={() => {console.log(items)}}
+          selectedImage={(selectedImage) => setSelected(selectedImage)}
+        />
       </div>
-      <Masonry
-        items={items}
-        ease="power3.out"
-        duration={2.1}
-        stagger={0.05}
-        animateFrom="bottom"
-        scaleOnHover={true}
-        hoverScale={0.95}
-        blurToFocus={true}
-        colorShiftOnHover={false}
-      />
-    </div>
+    </>
   );
 }

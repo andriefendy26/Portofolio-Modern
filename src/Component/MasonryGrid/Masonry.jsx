@@ -1,17 +1,7 @@
-import {
-  useEffect,
-  useLayoutEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { gsap } from "gsap";
 
-const useMedia = (
-  queries,
-  values,
-  defaultValue
-) => {
+const useMedia = (queries, values, defaultValue) => {
   const get = () =>
     values[queries.findIndex((q) => matchMedia(q).matches)] ?? defaultValue;
 
@@ -70,6 +60,7 @@ const Masonry = ({
   hoverScale = 0.95,
   blurToFocus = true,
   colorShiftOnHover = false,
+  selectedImage
 }) => {
   const columns = useMedia(
     [
@@ -92,9 +83,7 @@ const Masonry = ({
     let direction = animateFrom;
     if (animateFrom === "random") {
       const dirs = ["top", "bottom", "left", "right"];
-      direction = dirs[
-        Math.floor(Math.random() * dirs.length)
-      ];
+      direction = dirs[Math.floor(Math.random() * dirs.length)];
     }
 
     switch (direction) {
@@ -187,7 +176,7 @@ const Masonry = ({
       gsap.to(`[data-key="${id}"]`, {
         scale: hoverScale,
         duration: 0.3,
-        ease: "power2.out"
+        ease: "power2.out",
       });
     }
     if (colorShiftOnHover) {
@@ -201,13 +190,18 @@ const Masonry = ({
       gsap.to(`[data-key="${id}"]`, {
         scale: 1,
         duration: 0.3,
-        ease: "power2.out"
+        ease: "power2.out",
       });
     }
     if (colorShiftOnHover) {
       const overlay = element.querySelector(".color-overlay");
       if (overlay) gsap.to(overlay, { opacity: 0, duration: 0.3 });
     }
+  };
+
+  const handleOnClick = (items) => {
+    console.log(items)
+    selectedImage(items)
   };
 
   return (
@@ -218,7 +212,7 @@ const Masonry = ({
           data-key={item.id}
           className="absolute box-content"
           style={{ willChange: "transform, width, height, opacity" }}
-          onClick={() => window.open(item.url, "_blank", "noopener")}
+          onClick={() => handleOnClick(item.img)}
           onMouseEnter={(e) => handleMouseEnter(item.id, e.currentTarget)}
           onMouseLeave={(e) => handleMouseLeave(item.id, e.currentTarget)}
         >
