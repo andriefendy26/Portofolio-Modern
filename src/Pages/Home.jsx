@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../Layout/Hero'
 import ScrollVelocityLayout from '../Layout/ScrollVelocityLayout'
 import About from '../Layout/About'
@@ -9,6 +8,9 @@ import TechStack from '../Layout/TechStack'
 import GetInTouch from '../Layout/GetInTouch'
 
 export default function Home() {
+   
+
+
   return (
     <div className='overflow-hidden'>
       <Hero></Hero>

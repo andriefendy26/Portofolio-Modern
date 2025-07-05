@@ -54,10 +54,16 @@ export default function RecentProject() {
   ];
   return (
     <div className="my-10">
-      <h2 className="edu-vic-wa-nt-hand text-6xl mb-10 text-center">
+      <h2
+        data-aos="fade-left"
+        className="edu-vic-wa-nt-hand text-6xl mb-10 text-center"
+      >
         Recent Project
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mx-14 md:mx-20 lg:mx-24">
+      <div
+        data-aos="fade-right"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mx-14 md:mx-20 lg:mx-24"
+      >
         {data.map((items, i) => (
           <CardProject
             key={i}
@@ -72,6 +78,7 @@ export default function RecentProject() {
       </div>
 
       <Link
+         data-aos="fade-right"  
         className="flex mt-14 shadow-xl w-60 hover:shadow-2xl hover:border-gray-600 hover:border-2 hover:text-gray-800 hover:bg-transparent hover:shadow-black hover:scale-105 duration-300 mx-auto place-content-center items-center justify-center gap-2 bg-gray-700 text-center rounded-lg text-white p-2"
         to={"/project"}
       >

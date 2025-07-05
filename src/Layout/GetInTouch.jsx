@@ -37,7 +37,7 @@ export default function GetInTouch() {
     },
   ];
   return (
-    <div className="">
+    <div data-aos="fade-up" className="">
       <div className="grid grid-cols-1 md:grid-cols-2 mb-10 m5-32 border-t-1 boder-gray-300 pt-10 ">
         <div className=" m-auto">
           <>

@@ -202,17 +202,26 @@ export default function ProjectPage() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="edu-vic-wa-nt-hand text-6xl mb-4 text-gray-800">
+          <h1
+            data-aos="fade-right"
+            className="edu-vic-wa-nt-hand text-6xl mb-4 text-gray-800"
+          >
             My Projects
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p
+            data-aos="fade-left"
+            className="text-xl text-gray-600 max-w-2xl mx-auto"
+          >
             Kumpulan proyek yang telah saya kerjakan menggunakan berbagai
             teknologi modern
           </p>
         </div>
 
         {/* Search and Filter */}
-        <div className="mb-8 flex flex-col md:flex-row gap-4 justify-center items-center">
+        <div
+          data-aos="fade-up"
+          className="mb-8 flex flex-col md:flex-row gap-4 justify-center items-center"
+        >
           {/* Search Bar */}
           <div className="relative">
             <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -250,7 +259,10 @@ export default function ProjectPage() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-10 md:mx-8 xl:mx-32 lg:mx-12 justify-items-center">
+        <div
+          data-aos="fade-right"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-10 md:mx-8 xl:mx-32 lg:mx-12 justify-items-center"
+        >
           {filteredProjects.map((project, i) => (
             <CardProject
               key={i}

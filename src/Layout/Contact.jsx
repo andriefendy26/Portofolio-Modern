@@ -85,29 +85,47 @@ export default function ContactSection() {
               Pesan Terkirim! ✨
             </span>
           </h1>
-          
+
           <p className="text-xl text-gray-600 mb-8 animate-slideInUp animation-delay-200">
-            Terima kasih <span className="font-semibold text-gray-800">{form.name}</span> telah menghubungi kami!
+            Terima kasih{" "}
+            <span className="font-semibold text-gray-800">{form.name}</span>{" "}
+            telah menghubungi kami!
           </p>
 
           {/* Additional Info */}
           <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-lg border border-gray-200 animate-slideInUp animation-delay-400">
             <div className="flex items-center justify-center mb-4">
               <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center mr-3">
-                <svg className="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <svg
+                  className="w-4 h-4 text-gray-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
               </div>
-              <span className="text-gray-700">Kami akan membalas dalam 24 jam</span>
+              <span className="text-gray-700">
+                Kami akan membalas dalam 24 jam
+              </span>
             </div>
             <div className="flex items-center justify-center">
               <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center mr-3">
-                <svg className="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                <svg
+                  className="w-4 h-4 text-gray-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
                 </svg>
               </div>
-              <span className="text-gray-700">Pesan Anda sudah kami terima</span>
+              <span className="text-gray-700">
+                Pesan Anda sudah kami terima
+              </span>
             </div>
           </div>
 
@@ -120,7 +138,11 @@ export default function ContactSection() {
               Kirim Pesan Lagi
             </button>
             <button
-              onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById("home")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="px-8 py-3 bg-transparent border-2 border-gray-400 text-gray-700 rounded-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:bg-gray-50 hover:border-gray-600"
             >
               Kembali ke Beranda
@@ -138,10 +160,16 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="w-full pt-32 px-4 py-16">
-      <h2 className="edu-vic-wa-nt-hand text-5xl font-bold mb-6 text-center text-gray-800">
+      <h2
+        data-aos="fade-right"
+        className="edu-vic-wa-nt-hand text-5xl font-bold mb-6 text-center text-gray-800"
+      >
         Contact Me
       </h2>
-      <div className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+      <div
+        data-aos="fade-up"
+        className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg"
+      >
         <form onSubmit={handleSubmit} className="space-y-6 roboto-mono">
           <div>
             <label className="block mb-2 text-gray-700 font-medium">Nama</label>

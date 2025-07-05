@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./Layout/Layout";
 import Hero from "./Layout/Hero";
@@ -7,7 +8,15 @@ import ProjectPage from "./Pages/Project";
 // import AboutUs from "./Pages/AboutMe";
 import ContactSection from "./Layout/Contact";
 
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration : 1400
+    });
+  }, []);
   const router = createBrowserRouter([
     {
       path: "/",
@@ -27,7 +36,7 @@ function App() {
         },
         {
           path: "/contact",
-          element: <ContactSection/>,
+          element: <ContactSection />,
         },
         // {
         //   path: "/about",

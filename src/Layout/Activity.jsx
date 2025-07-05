@@ -1,17 +1,19 @@
-// import React, { useRef, useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
 
 export default function Activity() {
-  
   const explicitTheme = {
     light: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
     dark: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
   };
-
   return (
     <div className="mt-10">
-      <h2 className="edu-vic-wa-nt-hand text-6xl mb-5 text-center">Activity</h2>
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+      <h2
+        data-aos="fade-right"
+        className="edu-vic-wa-nt-hand text-6xl mb-5 text-center"
+      >
+        Activity
+      </h2>
+      <div  data-aos="fade-up"   className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
         <div className="mb-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-2">
             Contribution Activity
@@ -21,11 +23,6 @@ export default function Activity() {
 
         <div className="bg-gray-50 p-4 rounded-lg border">
           <GitHubCalendar username="andriefendy26" theme={explicitTheme} />
-          {/* <canvas
-            ref={canvasRef}
-            className="w-full h-auto"
-            style={{ maxWidth: "100%" }}
-          /> */}
         </div>
 
         {/* <div className="mt-4 text-sm text-gray-600">

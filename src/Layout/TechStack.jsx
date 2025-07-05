@@ -1,22 +1,22 @@
 import React from "react";
-import { 
-  FaCode, 
-  FaDatabase, 
-  FaServer, 
-  FaReact, 
-  FaMobile, 
-  FaLaravel, 
-  FaNodeJs, 
-  FaGitAlt, 
-  FaFigma
+import {
+  FaCode,
+  FaDatabase,
+  FaServer,
+  FaReact,
+  FaMobile,
+  FaLaravel,
+  FaNodeJs,
+  FaGitAlt,
+  FaFigma,
 } from "react-icons/fa";
-import { 
-  SiMysql, 
-  SiExpress, 
-  SiMongodb, 
-  SiTailwindcss, 
-  SiTypescript, 
-  SiRedis 
+import {
+  SiMysql,
+  SiExpress,
+  SiMongodb,
+  SiTailwindcss,
+  SiTypescript,
+  SiRedis,
 } from "react-icons/si";
 
 export default function TechStack() {
@@ -32,7 +32,7 @@ export default function TechStack() {
     { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
     // { name: "Redis", icon: <SiRedis className="text-red-600" /> },
     { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
-    { name: "Figma", icon: <FaFigma  /> },
+    { name: "Figma", icon: <FaFigma /> },
   ];
 
   return (
@@ -41,9 +41,8 @@ export default function TechStack() {
       <div className="py-20  relative overflow-hidden">
         {/* Background Pattern */}
 
-
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
+          <div data-aos="fade-right" className="text-center mb-16">
             <h2 className="edu-vic-wa-nt-hand text-5xl font-bold text-gray-900 mb-4">
               Technology Stack
             </h2>
@@ -53,7 +52,7 @@ export default function TechStack() {
             {/* <div className="w-24 h-1 bg-gradient-to-r from-gray-900 to-gray-600 mx-auto mt-4"></div> */}
           </div>
 
-          <div className="max-w-6xl mx-auto">
+          <div data-aos="fade-left" className="max-w-6xl mx-auto">
             <div className="flex flex-wrap justify-center gap-4">
               {techStack.map((tech, index) => (
                 <div
@@ -87,7 +86,6 @@ export default function TechStack() {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
 
