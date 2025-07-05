@@ -73,7 +73,7 @@ export default function RecentProject() {
 
       <Link
         className="flex mt-14 shadow-xl w-60 hover:shadow-2xl hover:border-gray-600 hover:border-2 hover:text-gray-800 hover:bg-transparent hover:shadow-black hover:scale-105 duration-300 mx-auto place-content-center items-center justify-center gap-2 bg-gray-700 text-center rounded-lg text-white p-2"
-        href={"/project"}
+        to={"/project"}
       >
         {/* <FaGithub /> */}
         Selengkapnya
