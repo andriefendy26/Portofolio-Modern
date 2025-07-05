@@ -101,7 +101,7 @@ export default function Hero() {
 
   return (
     <div
-      className=" pt-14 md:pt-0 lg:pt-14"
+      className="pt-34 md:pt-0 lg:pt-14"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -192,7 +192,7 @@ export default function Hero() {
             </AnimatedContent>
           </div>
         </div>
-        <div className="relative z-[200] flex gap-2 md:mt-10">
+        <div className="relative z-[200] flex flex-col text-center md:flex-row gap-2 md:mt-10">
           <AnimatedContent
             distance={150}
             direction="vertical"

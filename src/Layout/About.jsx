@@ -6,7 +6,8 @@ export default function About() {
     <div id="about" className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 px-4 sm:px-6 lg:px-8">
       {/* Lanyard Section */}
       <div className="order-2 lg:order-1 mask-alpha mask-t-from-black mask-t-from-50% mask-t-to-transparent">
-        <Lanyard></Lanyard>
+        {/* <Lanyard></Lanyard> */}
+        <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
       </div>
       
       {/* Content Section */}
