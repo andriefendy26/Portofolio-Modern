@@ -300,7 +300,7 @@ export default function Timeline() {
             style={{ transitionDelay: isVisible(2) ? "200ms" : "0ms" }}
           >
             <div className="rounded-full py-1 drop-shadow-lg px-3 bg-gray-400 font-bold italic">
-              Oct, 2023
+              Juli, 2025
             </div>
           </div>
           <div className="cols-span-1 relative justify-center flex flex-col items-center w-full h-full">
@@ -566,7 +566,7 @@ export default function Timeline() {
               </div>
               <div className="mb-3">
                 <div className="inline-block rounded-full py-1 drop-shadow-lg px-3 bg-gray-400 font-bold italic text-sm">
-                  Oct, 2023
+                  Juli, 2025
                 </div>
               </div>
               <div className="text-start">
