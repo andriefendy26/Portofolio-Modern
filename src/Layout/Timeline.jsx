@@ -34,7 +34,7 @@ export default function Timeline() {
   const isVisible = (index) => visibleItems.has(index.toString());
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 my-16">
+    <div className="px-4 sm:px-6 lg:px-8">
       <h2 className="edu-vic-wa-nt-hand text-5xl lg:text-6xl mb-5 md:text-center">
         Timeline
       </h2>

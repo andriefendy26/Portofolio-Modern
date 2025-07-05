@@ -101,7 +101,7 @@ export default function Hero() {
 
   return (
     <div
-      className="pt-32 sm:pt-32 md:pt-0 lg:pt-14"
+      className="pt-28 sm:pt-0 lg:pt-14"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -115,7 +115,7 @@ export default function Hero() {
       ></div>
 
       <div className="flex flex-col w-full h-screen justify-center items-center gap-1 cursor-pointer">
-        <p className="roboto-mono text-center text-sm md:text-lg lg:text-xl lg:mb-6 lg:p-0 p-4">
+        <p className="roboto-mono text-center text-sm sm:text-lg lg:text-xl lg:mb-6 lg:p-0 p-4">
           Hello 👋, Nama saya Andri Efendy dan seorang freelancer
         </p>
         <div
@@ -126,7 +126,7 @@ export default function Hero() {
           <div
             ref={TextUp}
             onMouseEnter={() => handleMouseEnterText("atas")}
-            className="text-overlay-wrapper edu-vic-wa-nt-hand text-7xl md:text-[8rem] lg:text-[11rem] font-[900] "
+            className="text-overlay-wrapper edu-vic-wa-nt-hand text-7xl sm:text-[8rem] lg:text-[11rem] font-[900] "
           >
             <BlurText
               text="Frontend"
@@ -148,7 +148,7 @@ export default function Hero() {
           <div
             ref={TextDown}
             onMouseEnter={() => handleMouseEnterText("bawah")}
-            className="text-overlay-wrapper oswald text-7xl md:text-[8rem] lg:text-[11rem] font-[900] md:tracking-[15px] lg:tracking-[30px]"
+            className="text-overlay-wrapper oswald text-7xl sm:text-[8rem] lg:text-[11rem] font-[900] sm:tracking-[0.5rem] lg:tracking-[30px]"
           >
             <BlurText
               text="Developer"
@@ -167,7 +167,7 @@ export default function Hero() {
               className="hidden transition-all duration-500 ease-in-out "
             ></BlurText>
           </div>
-          <div className="flex justify-between w-full text-sm gap-10 md:text-xl lg:text-2xl italic my-2 md:my-0">
+          <div className="flex flex-col text-center sm:flex-row sm:justify-between w-full text-sm md:gap-10 md:text-xl lg:text-2xl italic my-4 md:my-2 ">
             <AnimatedContent
               distance={150}
               direction="horizontal"
@@ -192,7 +192,7 @@ export default function Hero() {
             </AnimatedContent>
           </div>
         </div>
-        <div className="relative z-[200] flex flex-col text-center md:flex-row gap-2 md:mt-10">
+        <div className="relative z-[200] flex flex-col text-center sm:flex-row gap-2 md:mt-10 text-sm md:text-lg">
           <AnimatedContent
             distance={150}
             direction="vertical"
@@ -225,7 +225,7 @@ export default function Hero() {
           </AnimatedContent>
         </div>
         <img
-          className="relative md:absolute w-[300px] md:w-[400px] lg:w-[450px] bottom-0 z-[30] grayscale pointer-events-none mask-b-from-70% mask-b-to-95%"
+          className="relative sm:absolute w-[300px] sm:w-[400px] lg:w-[450px] bottom-0 z-[30] grayscale pointer-events-none mask-b-from-70% mask-b-to-95%"
           src={Image}
           alt="Andri"
           style={{
