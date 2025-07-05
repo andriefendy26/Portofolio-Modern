@@ -135,7 +135,6 @@ export default function ProjectPage() {
         "Porto/shoopepedia/iamge1.png",
         "Porto/shoopepedia/iamge2.png",
         "Porto/shoopepedia/iamge3.png",
-        // "Porto/kasirpyt/iamge4.png",
       ],
       title: "Website E-Commerce",
       subjudul:
@@ -180,7 +179,7 @@ export default function ProjectPage() {
     "All",
     "Web Development",
     "Mobile Development",
-    "Data Science",
+    // "Data Science",
   ];
 
   const filteredProjects = projectData.filter((project) => {
