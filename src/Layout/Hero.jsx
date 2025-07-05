@@ -101,7 +101,7 @@ export default function Hero() {
 
   return (
     <div
-      className="pt-34 md:pt-0 lg:pt-14"
+      className="pt-24 sm:pt-34 md:pt-0 lg:pt-14"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -114,19 +114,19 @@ export default function Hero() {
         }}
       ></div>
 
-      <div className="flex flex-col h-screen justify-center items-center gap-1 cursor-pointer">
-        <p className="roboto-mono text-center text-lg lg:text-xl lg:mb-6 lg:p-0 p-4">
+      <div className="flex flex-col w-full h-screen justify-center items-center gap-1 cursor-pointer">
+        <p className="roboto-mono text-center text-sm md:text-lg lg:text-xl lg:mb-6 lg:p-0 p-4">
           Hello 👋, Nama saya Andri Efendy dan seorang freelancer
         </p>
         <div
-          className="flex flex-col items-center   "
+          className="flex flex-col items-center"
           onMouseMove={handleMouseMoveCursor}
           onMouseLeave={handleMouseLeaveCursor}
         >
           <div
             ref={TextUp}
             onMouseEnter={() => handleMouseEnterText("atas")}
-            className="text-overlay-wrapper edu-vic-wa-nt-hand text-7xl md:text-[8rem] lg:text-[11rem] font-[900] "
+            className="text-overlay-wrapper edu-vic-wa-nt-hand text-5xl md:text-[8rem] lg:text-[11rem] font-[900] "
           >
             <BlurText
               text="Frontend"
@@ -148,7 +148,7 @@ export default function Hero() {
           <div
             ref={TextDown}
             onMouseEnter={() => handleMouseEnterText("bawah")}
-            className="text-overlay-wrapper oswald  text-7xl md:text-[8rem] lg:text-[11rem] font-[900] tracking-[15px] lg:tracking-[30px]"
+            className="text-overlay-wrapper oswald text-5xl md:text-[8rem] lg:text-[11rem] font-[900] tracking-[15px] lg:tracking-[30px]"
           >
             <BlurText
               text="Developer"
