@@ -3,7 +3,7 @@ import ScrollVelocity from "../Component/ScrollVelocity/Scroll";
 
 export default function ScrollVelocityLayout() {
   return (
-    <div className='my-10'>
+    <div className='my-10 overflow-x-hidden'>
        <ScrollVelocity
         texts={["Frontend Developer", "Frontend Developer"]}
         velocity={100}

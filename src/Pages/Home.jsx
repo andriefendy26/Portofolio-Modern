@@ -10,7 +10,7 @@ import GetInTouch from '../Layout/GetInTouch'
 
 export default function Home() {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Hero></Hero>
       <ScrollVelocityLayout></ScrollVelocityLayout>
       <About></About>

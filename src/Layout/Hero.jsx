@@ -101,7 +101,7 @@ export default function Hero() {
 
   return (
     <div
-      className="pt-24 sm:pt-34 md:pt-0 lg:pt-14"
+      className="pt-32 sm:pt-32 md:pt-0 lg:pt-14"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -126,7 +126,7 @@ export default function Hero() {
           <div
             ref={TextUp}
             onMouseEnter={() => handleMouseEnterText("atas")}
-            className="text-overlay-wrapper edu-vic-wa-nt-hand text-5xl md:text-[8rem] lg:text-[11rem] font-[900] "
+            className="text-overlay-wrapper edu-vic-wa-nt-hand text-7xl md:text-[8rem] lg:text-[11rem] font-[900] "
           >
             <BlurText
               text="Frontend"
@@ -148,7 +148,7 @@ export default function Hero() {
           <div
             ref={TextDown}
             onMouseEnter={() => handleMouseEnterText("bawah")}
-            className="text-overlay-wrapper oswald text-5xl md:text-[8rem] lg:text-[11rem] font-[900] tracking-[15px] lg:tracking-[30px]"
+            className="text-overlay-wrapper oswald text-7xl md:text-[8rem] lg:text-[11rem] font-[900] md:tracking-[15px] lg:tracking-[30px]"
           >
             <BlurText
               text="Developer"
@@ -167,7 +167,7 @@ export default function Hero() {
               className="hidden transition-all duration-500 ease-in-out "
             ></BlurText>
           </div>
-          <div className="flex justify-between w-full md:text-xl lg:text-2xl italic my-2 md:my-0">
+          <div className="flex justify-between w-full text-sm gap-10 md:text-xl lg:text-2xl italic my-2 md:my-0">
             <AnimatedContent
               distance={150}
               direction="horizontal"
@@ -203,7 +203,7 @@ export default function Hero() {
             animateOpacity
           >
             <a href="https://wa.me/6282255187877?text=Halo%2C%20saya%20ingin%20membuat%20aplikasi%20web." target="_blank" rel="noopener noreferrer">
-              <div className=" p-2 px-5 border-black transition-all duration-300 hover:shadow-2xl bg-black text-white border-2 cursor-pointer rounded-lg tracking-tight hover:px-10">
+              <div className=" p-2 px-5 border-black transition-all duration-300 hover:shadow-2xl bg-black text-white border-2 cursor-pointer rounded-lg  hover:px-10">
                 You need a website
               </div>
             </a>
