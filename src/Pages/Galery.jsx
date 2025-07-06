@@ -131,12 +131,12 @@ export default function Galery() {
       url: "/",
       height: 600,
     },
-    {
-      id: "22",
-      img: "./Galery/22.jpg",
-      url: "/",
-      height: 350,
-    },
+    // {
+    //   id: "22",
+    //   img: "./Galery/22.jpg",
+    //   url: "/",
+    //   height: 350,
+    // },
     {
       id: "23",
       img: "./Galery/23.jpg",
@@ -167,12 +167,12 @@ export default function Galery() {
       url: "/",
       height: 350,
     },
-    {
-      id: "28",
-      img: "./Galery/28.jpg",
-      url: "/",
-      height: 350,
-    },
+    // {
+    //   id: "28",
+    //   img: "./Galery/28.jpg",
+    //   url: "/",
+    //   height: 350,
+    // },
     {
       id: "29",
       img: "./Galery/29.jpg",
