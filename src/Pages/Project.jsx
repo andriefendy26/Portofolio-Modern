@@ -157,6 +157,17 @@ export default function ProjectPage() {
       date: "2023",
     },
     {
+      img: ["Porto/BMI/image.png"],
+      title: "Web Perhitungan BMI menggunakan Fuzzy Logic",
+      subjudul:
+        "Web Perhitungan Bmi sudah menggunakan logika fuzzy sehingga hasil yang di keluarkan lebih akurat",
+      github: "/",
+      production: "/",
+      techStack: ["React Vite"],
+      category: "Mikrocontrolle & Web Development",
+      date: "2023",
+    },
+    {
       img: [
         "Porto/penyiraman/image.png",
         "Porto/kasirpyt/iamge1.png",
@@ -170,7 +181,7 @@ export default function ProjectPage() {
       github: "/",
       production: "/",
       techStack: ["Arduino", "socket.io"],
-      category: "Mikrocontrolle & rWeb Development",
+      category: "Mikrocontrolle & Web Development",
       date: "2023",
     },
   ];
