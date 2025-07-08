@@ -5,7 +5,7 @@ export default function ScrollVelocityLayout() {
   return (
     <div className='my-10 overflow-x-hidden'>
        <ScrollVelocity
-        texts={["Frontend Developer", "Frontend Developer"]}
+        texts={["Fullstack Developer", "Fullstack Developer"]}
         velocity={100}
         className="custom-scroll-text"
       />
