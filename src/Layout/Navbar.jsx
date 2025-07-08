@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./css/Navbar.css";
+import { HiOutlineDocument } from "react-icons/hi";
 
 export default function Navbar() {
   const location = useLocation();
@@ -61,11 +62,12 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden lg:block">
-            <ul className="flex gap-6 xl:gap-10 relative roboto-mono">
+            <ul className="flex items-center gap-6 xl:gap-10 relative roboto-mono">
               {items.map((item, i) => {
                 const isActive =
                   location.pathname === item.Link ||
-                  (item.Link.includes("#") && location.hash === item.Link.split("/")[1]);
+                  (item.Link.includes("#") &&
+                    location.hash === item.Link.split("/")[1]);
 
                 return (
                   <li key={i} className="relative tracking-widest">
@@ -96,6 +98,16 @@ export default function Navbar() {
                   </li>
                 );
               })}
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1xt7KpFvbcSt0HunmmJArpbJXBDA_0-Px/view"
+                  className="flex hover:border-gray-600 hover:border-2 hover:text-gray-700 hover:bg-transparent hover:scale-105 duration-300 items-center justify-center gap-2 bg-gray-700 text-center rounded-lg text-white p-2"
+                  target="_blank"
+                >
+                  <HiOutlineDocument />
+                  Donwload CV
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -136,8 +148,8 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <div
           className={`lg:hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen 
-              ? "max-h-72 opacity-100 pb-4" 
+            isMenuOpen
+              ? "max-h-96 opacity-100 pb-4"
               : "max-h-0 opacity-0 overflow-hidden"
           }`}
         >
@@ -145,7 +157,8 @@ export default function Navbar() {
             {items.map((item, i) => {
               const isActive =
                 location.pathname === item.Link ||
-                (item.Link.includes("#") && location.hash === item.Link.split("/")[1]);
+                (item.Link.includes("#") &&
+                  location.hash === item.Link.split("/")[1]);
 
               return (
                 <li key={i} className="tracking-widest">
@@ -177,6 +190,16 @@ export default function Navbar() {
                 </li>
               );
             })}
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1xt7KpFvbcSt0HunmmJArpbJXBDA_0-Px/view"
+                className="flex hover:border-gray-600 hover:border-2 hover:text-gray-700 hover:bg-transparent hover:scale-105 transition-all duration-300 items-center justify-center gap-2 bg-gray-700 text-center rounded-lg text-white p-2"
+                target="_blank"
+              >
+                <HiOutlineDocument />
+                Donwload CV
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -8,9 +8,6 @@ import TechStack from '../Layout/TechStack'
 import GetInTouch from '../Layout/GetInTouch'
 
 export default function Home() {
-   
-
-
   return (
     <div className='overflow-hidden'>
       <Hero></Hero>
