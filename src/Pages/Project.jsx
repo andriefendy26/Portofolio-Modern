@@ -169,6 +169,23 @@ export default function ProjectPage() {
     },
     {
       img: [
+        "Porto/3rasa/1.png",
+        "Porto/kasirpyt/iamge1.png",
+        "Porto/kasirpyt/iamge2.png",
+        "Porto/kasirpyt/iamge3.png",
+        "Porto/kasirpyt/iamge4.png",
+      ],
+      title: "Website Wedding Organizer",
+      subjudul:
+        "Website ini dibuat untuk mempromosikan layanan wedding organizer serta menampilkan portofolio acara yang telah di tangani",
+      github: "/",
+      production: "https://3rasaproduction.com/",
+      techStack: ["Laravel", "Filament"],
+      category: "Web Development",
+      date: "2024",
+    },
+    {
+      img: [
         "Porto/penyiraman/image.png",
         "Porto/kasirpyt/iamge1.png",
         "Porto/kasirpyt/iamge2.png",
@@ -184,13 +201,30 @@ export default function ProjectPage() {
       category: "Mikrocontrolle & Web Development",
       date: "2023",
     },
+    {
+      img: [
+        "Porto/KelurahanJuata/Thumbnail.png",
+        "Porto/KelurahanJuata/01.png",
+        "Porto/KelurahanJuata/02.png",
+        "Porto/KelurahanJuata/03.png",
+        "Porto/KelurahanJuata/04.png",
+        "Porto/KelurahanJuata/05.png",
+      ],
+      title: "Website Kelurahan Juata Permai",
+      subjudul:
+        "Menyajikan informasi seputar kelurahan juata permai serta sebagai media komunikasi antara warga dan pihak kelurahan",
+      github: "/",
+      production: "https://keljuatapermai.com/",
+      techStack: ["Laravel", "Filament"],
+      category: "Web Development",
+      date: "2025",
+    },
   ];
 
   const categories = [
     "All",
     "Web Development",
     "Mobile Development",
-    // "Data Science",
   ];
 
   const filteredProjects = projectData.filter((project) => {
