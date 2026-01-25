@@ -53,17 +53,81 @@ export default function ProjectPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const projectData = [
-    {
-      img: ["Porto/codevlabs/thumbnail.png"],
-      title: "Website CodevLabs",
+       {
+      img: [
+        "Porto/pkmpantaiamal/01.png",
+      ],
+      title: "Website Company Profile Puskesmas Pantai Amal",
       subjudul:
-        "Website ini dibuat untuk Menawarkan layanan profesional di bidang pengembangan teknologi digital,  Menampilkan portofolio proyek digital yang pernah di kerjakan. dan Menjadi media untuk klien melakukan konsultasi dan pemesanan jasa.",
+        "Website company profile untuk puskesmas pantai amal",
       github: "/",
-      production: "https://codev-labs-s4xd.vercel.app/",
-      techStack: ["React vite", "TailwindCSS"],
+      production: "https://pkmpantaiamal.com/",
+      techStack: ["React", "TailwindCSS", "Vite"],
+      category: "Web Development",
+      date: "2025",
+    },
+    {
+      img: [
+        "Porto/Arsip/image.png",
+      ],
+      title: "Sistem Informasi Pengarsipan Dokumen Puskesmas Pantai Amal",
+      subjudul:
+        "Website Sistem Informasi yang di gunakan untuk pengarsipan dokumen",
+      github: "/",
+      production: "https://arsip.pkmpantaiamal.com/admin",
+      techStack: ["Laravel", "Filament"],
+      category: "Web Development",
+      date: "2025",
+    },
+    {
+      img: [
+        "Porto/SKpuspa/image.png",
+      ],
+      title: "Sistem Informasi Surat Keterangan Puskesmas Pantai Amal",
+      subjudul:
+        "Website Sistem Informasi mempermudah dalam pengarsipan, pembuatan surat keterangan",
+      github: "/",
+      production: "https://sk.pkmpantaiamal.com/admin",
+      techStack: ["Laravel", "Filament"],
+      category: "Web Development",
+      date: "2025",
+    },
+    {
+      img: [
+        "Porto/KelurahanJuata/Thumbnail.png",
+        "Porto/KelurahanJuata/01.png",
+        "Porto/KelurahanJuata/02.png",
+        "Porto/KelurahanJuata/03.png",
+        "Porto/KelurahanJuata/04.png",
+        "Porto/KelurahanJuata/05.png",
+      ],
+      title: "Website Kelurahan Juata Permai",
+      subjudul:
+        "Menyajikan informasi seputar kelurahan juata permai serta sebagai media komunikasi antara warga dan pihak kelurahan",
+      github: "/",
+      production: "https://keljuatapermai.com/",
+      techStack: ["Laravel", "Filament"],
+      category: "Web Development",
+      date: "2025",
+    },
+      {
+      img: [
+        "Porto/3rasa/1.png",
+        "Porto/kasirpyt/iamge1.png",
+        "Porto/kasirpyt/iamge2.png",
+        "Porto/kasirpyt/iamge3.png",
+        "Porto/kasirpyt/iamge4.png",
+      ],
+      title: "Website Wedding Organizer",
+      subjudul:
+        "Website ini dibuat untuk mempromosikan layanan wedding organizer serta menampilkan portofolio acara yang telah di tangani",
+      github: "/",
+      production: "https://3rasaproduction.com/",
+      techStack: ["Laravel", "Filament"],
       category: "Web Development",
       date: "2024",
     },
+  
     {
       img: [
         "Porto/c2ukaltara/thumbnail.png",
@@ -83,6 +147,7 @@ export default function ProjectPage() {
     },
     {
       img: [
+        "Porto/cashiermate/cover.png",
         "Porto/cashiermate/image1.png",
         "Porto/cashiermate/image2.png",
         "Porto/cashiermate/image3.png",
@@ -111,6 +176,30 @@ export default function ProjectPage() {
       techStack: ["Laravel", "Filament"],
       category: "Web Development",
       date: "2024",
+    },
+      {
+      img: ["Porto/codevlabs/thumbnail.png"],
+      title: "Website CodevLabs",
+      subjudul:
+        "Website ini dibuat untuk Menawarkan layanan profesional di bidang pengembangan teknologi digital,  Menampilkan portofolio proyek digital yang pernah di kerjakan. dan Menjadi media untuk klien melakukan konsultasi dan pemesanan jasa.",
+      github: "/",
+      production: "https://codev-labs-s4xd.vercel.app/",
+      techStack: ["React vite", "TailwindCSS"],
+      category: "Web Development",
+      date: "2024",
+    },
+    {
+      img: [
+        "Porto/KIA/01.png",
+      ],
+      title: "Website Pencatatan Data Pasien Kesehatan Ibu dan Anak",
+      subjudul:
+        "Sistem informasi untuk pencatatan data pasien",
+      github: "/",
+      production: "https://datakia.pkmpantaiamal.com/admin/login",
+      techStack: ["Laravel", "Filament"],
+      category: "Web Development",
+      date: "2025",
     },
     {
       img: [
@@ -167,23 +256,7 @@ export default function ProjectPage() {
       category: "Mikrocontrolle & Web Development",
       date: "2023",
     },
-    {
-      img: [
-        "Porto/3rasa/1.png",
-        "Porto/kasirpyt/iamge1.png",
-        "Porto/kasirpyt/iamge2.png",
-        "Porto/kasirpyt/iamge3.png",
-        "Porto/kasirpyt/iamge4.png",
-      ],
-      title: "Website Wedding Organizer",
-      subjudul:
-        "Website ini dibuat untuk mempromosikan layanan wedding organizer serta menampilkan portofolio acara yang telah di tangani",
-      github: "/",
-      production: "https://3rasaproduction.com/",
-      techStack: ["Laravel", "Filament"],
-      category: "Web Development",
-      date: "2024",
-    },
+  
     {
       img: [
         "Porto/penyiraman/image.png",
@@ -201,24 +274,9 @@ export default function ProjectPage() {
       category: "Mikrocontrolle & Web Development",
       date: "2023",
     },
-    {
-      img: [
-        "Porto/KelurahanJuata/Thumbnail.png",
-        "Porto/KelurahanJuata/01.png",
-        "Porto/KelurahanJuata/02.png",
-        "Porto/KelurahanJuata/03.png",
-        "Porto/KelurahanJuata/04.png",
-        "Porto/KelurahanJuata/05.png",
-      ],
-      title: "Website Kelurahan Juata Permai",
-      subjudul:
-        "Menyajikan informasi seputar kelurahan juata permai serta sebagai media komunikasi antara warga dan pihak kelurahan",
-      github: "/",
-      production: "https://keljuatapermai.com/",
-      techStack: ["Laravel", "Filament"],
-      category: "Web Development",
-      date: "2025",
-    },
+    
+    
+ 
   ];
 
   const categories = [
