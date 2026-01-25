@@ -363,7 +363,7 @@ export default function ProjectPage() {
         {/* Projects Grid */}
         <div
           data-aos="fade-right"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-10 md:mx-8 xl:mx-32 lg:mx-12 justify-items-center"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mx-10 md:mx-8 xl:mx-16 lg:mx-12 justify-items-center"
         >
           {filteredProjects.map((project, i) => (
             <CardProject
