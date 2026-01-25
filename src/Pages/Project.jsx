@@ -55,7 +55,7 @@ export default function ProjectPage() {
   const projectData = [
        {
       img: [
-        "Porto/pkmpantaiamal/01.png",
+        "Porto/pkmpantaiamal/cover.png",
       ],
       title: "Website Company Profile Puskesmas Pantai Amal",
       subjudul:
@@ -68,7 +68,7 @@ export default function ProjectPage() {
     },
     {
       img: [
-        "Porto/Arsip/image.png",
+        "Porto/Arsip/cover.png",
       ],
       title: "Sistem Informasi Pengarsipan Dokumen Puskesmas Pantai Amal",
       subjudul:
@@ -81,7 +81,7 @@ export default function ProjectPage() {
     },
     {
       img: [
-        "Porto/SKpuspa/image.png",
+        "Porto/SKpuspa/cover.png",
       ],
       title: "Sistem Informasi Surat Keterangan Puskesmas Pantai Amal",
       subjudul:
@@ -94,7 +94,7 @@ export default function ProjectPage() {
     },
     {
       img: [
-        "Porto/KelurahanJuata/Thumbnail.png",
+        "Porto/KelurahanJuata/cover.png",
         "Porto/KelurahanJuata/01.png",
         "Porto/KelurahanJuata/02.png",
         "Porto/KelurahanJuata/03.png",
@@ -112,7 +112,7 @@ export default function ProjectPage() {
     },
       {
       img: [
-        "Porto/3rasa/1.png",
+        "Porto/3rasa/cover.png",
         "Porto/kasirpyt/iamge1.png",
         "Porto/kasirpyt/iamge2.png",
         "Porto/kasirpyt/iamge3.png",
@@ -130,7 +130,7 @@ export default function ProjectPage() {
   
     {
       img: [
-        "Porto/c2ukaltara/thumbnail.png",
+        "Porto/c2ukaltara/cover.png",
         "Porto/c2ukaltara/image.png",
         "Porto/c2ukaltara/image0.png",
         "Porto/c2ukaltara/image1.png",
@@ -163,7 +163,7 @@ export default function ProjectPage() {
     },
     {
       img: [
-        "Porto/rentalMobil/thumbnail.png",
+        "Porto/rentalMobil/cover.png",
         "Porto/rentalMobil/image1.png",
         "Porto/cashiermate/image2.png",
         "Porto/cashiermate/image3.png",
@@ -203,7 +203,7 @@ export default function ProjectPage() {
     },
     {
       img: [
-        "Porto/kasirpyt/thumbnail.png",
+        "Porto/kasirpyt/cover.png",
         "Porto/kasirpyt/iamge1.png",
         "Porto/kasirpyt/iamge2.png",
         "Porto/kasirpyt/iamge3.png",
@@ -235,7 +235,7 @@ export default function ProjectPage() {
       date: "2023",
     },
     {
-      img: ["Porto/perpustakaan/thumbnail.png"],
+      img: ["Porto/perpustakaan/cover.png"],
       title: "Aplikasi Website Perpustakaan",
       subjudul:
         "Aplikasi ini di bangun untuk memanagemen database kepegawaian serta konten website",
@@ -259,7 +259,7 @@ export default function ProjectPage() {
   
     {
       img: [
-        "Porto/penyiraman/image.png",
+        "Porto/penyiraman/cover.png",
         "Porto/kasirpyt/iamge1.png",
         "Porto/kasirpyt/iamge2.png",
         "Porto/kasirpyt/iamge3.png",
