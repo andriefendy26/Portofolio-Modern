@@ -53,7 +53,20 @@ export default function ProjectPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const projectData = [
-       {
+    {
+      img: [
+        "Porto/sipaki/cover.png",
+      ],
+      title: "SIPAKI - Mobile App",
+      subjudul:
+        "Website company profile untuk puskesmas pantai amal",
+      github: "/",
+      production: "#",
+      techStack: ["React Native", "Laravel", "Expo"],
+      category: "Mobile Development",
+      date: "2025",
+    },
+    {
       img: [
         "Porto/pkmpantaiamal/cover.png",
       ],

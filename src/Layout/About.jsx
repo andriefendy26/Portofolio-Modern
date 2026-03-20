@@ -36,22 +36,7 @@ export default function About() {
           animateOpacity
         >
           <p className="roboto-mono tracking-wide text-sm sm:text-base leading-relaxed">
-            <span className="hidden lg:inline mx-4"></span>Perjalanan saya di dunia teknologi
-            dimulai sejak bangku SMP, memicu ketertarikan pada komputer yang
-            kemudian mendorong saya untuk menempuh pendidikan di program studi
-            Teknik Komputer, Universitas Borneo Tarakan pada tahun 2021. Selama
-            masa perkuliahan, saya aktif mengembangkan diri melalui pengalaman
-            praktis. Saya bekerja paruh waktu sebagai barista, yang tidak hanya
-            membantu secara finansial tetapi juga membentuk kedisiplinan,
-            tanggung jawab, dan kemampuan manajemen waktu yang baik antara studi
-            dan pekerjaan. Di sela-sela kuliah dan pekerjaan, saya juga aktif
-            mengerjakan berbagai proyek teknologi seperti Internet of Things
-            (IoT), aplikasi Android, dan pengembangan website. Beberapa proyek
-            penting yang pernah saya kerjakan antara lain: aplikasi kasir
-            berbasis website dan Android, serta layanan freelance jasa pembuatan
-            aplikasi mobile dan website untuk kebutuhan klien. Skripsi saya yang
-            berjudul "Pengembangan Fitur E-Logbook Berbasis Face Recognition
-            pada Website C2UKaltara.id" semakin memperdalam keahlian saya.
+            <span className="hidden lg:inline mx-4"></span>Perjalanan saya di dunia teknologi dimulai sejak SMP, saat ketertarikan pada komputer mulai tumbuh. Minat tersebut membawa saya melanjutkan studi di Program Studi Teknik Komputer, Universitas Borneo Tarakan pada tahun 2021. Selama kuliah, saya aktif mengembangkan kemampuan melalui berbagai proyek seperti Internet of Things (IoT), aplikasi Android, dan pengembangan website. Saya juga bekerja paruh waktu sebagai barista, yang membentuk kedisiplinan, tanggung jawab, dan kemampuan manajemen waktu. Beberapa proyek yang pernah saya kerjakan meliputi aplikasi kasir berbasis website dan Android, serta layanan freelance pembuatan aplikasi mobile dan website. Melalui skripsi berjudul “Pengembangan Fitur E-Logbook Berbasis Face Recognition pada Website C2UKaltara.id”, saya semakin memperdalam keahlian di bidang teknologi.
           </p>
         </AnimatedContent>
       </div>

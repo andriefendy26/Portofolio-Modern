@@ -8,7 +8,7 @@ export default function RecentProject() {
   const data = [
     {
       img: [
-        "Porto/c2ukaltara/thumbnail.png",
+        "Porto/c2ukaltara/cover.png",
         "Porto/c2ukaltara/image.png",
         "Porto/c2ukaltara/image0.png",
         "Porto/c2ukaltara/image1.png",
@@ -36,20 +36,33 @@ export default function RecentProject() {
       techStack: ["React", "React Native", "Laravel"],
       date: "",
     },
+    // {
+    //   img: [
+    //     "Porto/rentalMobil/cover.png",
+    //     "Porto/rentalMobil/image1.png",
+    //     "Porto/cashiermate/image2.png",
+    //     "Porto/cashiermate/image3.png",
+    //   ],
+    //   title: "Aplikasi Website Rental Mobil",
+    //   subjudul:
+    //     "Aplikasi website ini di bangun sebagai media promosi untuk usaha rental mobil, memanagemen artikel serta mencatat transaksi",
+    //   github: "/",
+    //   production: "https://cvtujuhsembilanotorentcar.com/",
+    //   techStack: ["Laravel", "Filament"],
+    //   date: "",
+    // },
     {
       img: [
-        "Porto/rentalMobil/thumbnail.png",
-        "Porto/rentalMobil/image1.png",
-        "Porto/cashiermate/image2.png",
-        "Porto/cashiermate/image3.png",
+        "Porto/sipaki/cover.png",
       ],
-      title: "Aplikasi Website Rental Mobil",
+      title: "SIPAKI - Mobile App",
       subjudul:
-        "Aplikasi website ini di bangun sebagai media promosi untuk usaha rental mobil, memanagemen artikel serta mencatat transaksi",
+        "Website company profile untuk puskesmas pantai amal",
       github: "/",
-      production: "https://cvtujuhsembilanotorentcar.com/",
-      techStack: ["Laravel", "Filament"],
-      date: "",
+      production: "#",
+      techStack: ["React Native", "Laravel", "Expo"],
+      category: "Mobile Development",
+      date: "2025",
     },
   ];
   return (
