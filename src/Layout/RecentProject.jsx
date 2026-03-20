@@ -57,7 +57,7 @@ export default function RecentProject() {
       ],
       title: "SIPAKI - Mobile App",
       subjudul:
-        "Website company profile untuk puskesmas pantai amal",
+        "Aplikasi mobile berbasis sistem informasi yang dirancang untuk mempermudah pelaporan harian secara real-time dan terintegrasi",
       github: "/",
       production: "#",
       techStack: ["React Native", "Laravel", "Expo"],
